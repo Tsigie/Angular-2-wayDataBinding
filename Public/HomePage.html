@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="appModule">
+<head>
+	<title>Angular JS Two-Way Data Binding App</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="main.js"></script>
+</head>
+	<body ng-app="myModule">
+		<div ng-controller="myController">
+			<table>
+				<tr>
+					<td>First Name</td>
+					<td>
+						<input type=text ng-model="employee.firstName" />
+					</td> 
+				</tr>
+				<tr>
+					<td>Last Name</td>
+					<td>
+						<input type=text ng-model="employee.lastName" />
+					</td>
+				</tr>
+				<tr>
+					<td>Gender</td>
+					<td>
+						<input type=text ng-model="employee.gender" />
+					</td>
+				</tr>
+				</table>
+			<br />
+			<table>
+				<tr>
+					<td>First Name</td>
+					<td>
+						{{ employee.firstName }}
+					</td>
+				</tr>
+				<tr>
+					<td>Last Name</td>
+					<td>
+						{{ employee.lastName }}
+					</td>
+				</tr>
+				<tr>
+					<td>Gender</td>
+					<td>
+						{{ employee.gender }}
+					</td>
+				</tr>
+			</table>
+			
+		</div>
+		
+
+	</body>
+</html>
